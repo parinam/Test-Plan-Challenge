@@ -11,3 +11,11 @@
 
 ## Table of Contents
 1. [Working Agreement for the Quality of the Product](./TestPlan/Working-Agreement.md)
+2. [Environment and Browser](./TestPlan/Environment-Browser.md)
+3. [Testing Procedures](./TestPlan/Testing-Procedures.md)
+4. [Testing Strategy](./TestPlan/Testing-Strategy.md)
+    * Text Conversion
+    * [Text Conversion Functional Testing](./TestPlan/Text-Conversion-Functional-Testing.md)
+    * Image Conversion
+    * [Image Conversion Functional Testing](./TestPlan/Image-Conversion-Functional-Testing.md)
+ 5. [Non Functional Testing](./TestPlan/Testing-Strategy.md)
