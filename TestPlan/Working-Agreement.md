@@ -9,11 +9,11 @@
 
 ### Follow fail fast approach (Trunk based development)
 ONLY for toggled off features that is not ready for releases to end clients but the code can be pushed to production to minimize          merge/integration pain.
-      * Note: This works best when there are inter dependent teams releasing at the same time and avoids cherry picking later from the                   release branch if there is any critical bug.
-      * Feature branches should be short-lived, no more than a day or two (doesn’t impede ability to release).
-      * Feature branches should be first code reviewed for it to be merged to trunk (not a release branch)
-b. Automation kicks off as part of continuous delivery once any feature branch is merged to trunk. This helps in failing fast by
-   finding out defects on the integrated code earlier in phase.
+* Note: This works best when there are inter dependent teams releasing at the same time and avoids cherry picking later from the                   release branch if there is any critical bug.
+    * Feature branches should be short-lived, no more than a day or two (doesn’t impede ability to release).
+    * Feature branches should be first code reviewed for it to be merged to trunk (not a release branch)
+    * Automation kicks off as part of continuous delivery once any feature branch is merged to trunk. This helps in failing fast by
+      finding out defects on the integrated code earlier in phase.
 
 ### Toggled on features (That are exposed to end users)
 a. Example – Bugs (design, functional or non-functional), small ready features, small enhancements etc.
