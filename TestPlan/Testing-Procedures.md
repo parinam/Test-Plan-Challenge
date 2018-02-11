@@ -30,3 +30,16 @@ To achieve continuous delivery, quality should be intact at every level.
 4. Any critical bug that can be fixed before the release is added to the release branch and regression testing executes again.
 5. If critical bug cannot be fixed at given time, the release is cancelled and later a hotfix release is scheduled.
 * Note - 4th and 5th point is explained in working agreement.
+
+### Acceptance testing –
+1. This is Manual exploratory testing done by business or some stakeholders
+2. Testing is around new features
+
+- No special test cases are required to perform the testing
+Production testing –
+- The team (developers, QA, Scrum master and PO’s) testing on prod
+environment to make sure functionality is not broken
+- Run smoke automation tests that covers business critical areas
+- It is not possible to catch all the bugs before the release on
+pre-production environment.
+- Monitoring tools can send alerts if the system is down.
