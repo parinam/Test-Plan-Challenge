@@ -29,3 +29,4 @@ To achieve continuous delivery, quality should be intact at every level.
 3. The data is somewhat real as it is refreshed to the lower environments from prod before start of the sprint.
 4. Any critical bug that can be fixed before the release is added to the release branch and regression testing executes again.
 5. If critical bug cannot be fixed at given time, the release is cancelled and later a hotfix release is scheduled.
+** Note - 4th and 5th point is explained in working agreement.
