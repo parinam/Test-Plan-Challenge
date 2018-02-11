@@ -1,9 +1,9 @@
 1. Each member of the team contributes to the quality of the product, collectively analyses and creates subtasks from the acceptance          criteria and evaluates any gaps in the requirements before starting the feature development.
 2. Re-evaluate the estimation if there are changes in the requirements based on the discussion of point 2.
 3. For faster delivery with high quality, the team (devs, QA, designers and Product Owners) can negotiate the tasks to be accomplished for    that feature.
-      Example:
-       * Business would like performance testing as nice to have but something they can live with as long as it does not impact user’s              ability to perform on the application.
-       * Low priority bugs can be taken up in later sprints.
+   * Example:
+       a. Business would like performance testing as nice to have but something they can live with as long as it does not impact user’s              ability to perform on the application.
+       b. Low priority bugs can be taken up in later sprints.
       Above two points can go into the backlog to keep track of to-do’s.
 4. Test cases are reviewed together as a team and the team provides sign-off on the test cases. This can go in parallel with development      of the feature.
 
