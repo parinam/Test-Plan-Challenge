@@ -10,4 +10,4 @@
 7. Following Agile Principles – after two weeks sprint, there is a release. Each squad/team member participates in sprint retrospective      and talks about what went well, what didn’t go well and any action items to improve the process in order to deliver high quality          product.
 
 ## Table of Contents
-1. [Working Agreement for the Quality of the Product] (./TestPlan/Working-Agreement.md)
+1. [Working Agreement for the Quality of the Product](./TestPlan/Working-Agreement.md)
