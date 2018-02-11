@@ -32,5 +32,22 @@
         * expected_output = banner5.txt and preview 
         
 *Note - Repeat above test cases for all the font options (big,block,bubble,lean,mini,script,shadow,slant,standard).
+  
+   * Example 6: (Negative path)
+        * actual_input = Empty
+        * Font = Banner
+        * Width = 100
+        * expected_output = None
         
+   * Example 8: (Negative path)
+        * actual_input = Max characters
+        * Font = Banner
+        * Width = 100
+        * expected_output = None
+        
+    * Example 9: (Negative path)
+        * actual_input = Max characters
+        * Font = None
+        * Width = 100
+        * expected_output = None
 2. If all the test cases pass, add the high quality test cases to automation suite that runs in continuous integration development            practice.
