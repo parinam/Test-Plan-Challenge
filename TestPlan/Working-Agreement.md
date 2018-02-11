@@ -8,7 +8,7 @@
 4. Test cases are reviewed together as a team and the team provides sign-off on the test cases. This can go in parallel with development      of the feature.
 
 ### Follow fail fast approach (Trunk based development)
-a. ONLY for toggled off features that is not ready for releases to end clients but the code can be pushed to production to minimize          merge/integration pain.
+ONLY for toggled off features that is not ready for releases to end clients but the code can be pushed to production to minimize          merge/integration pain.
       * Note: This works best when there are inter dependent teams releasing at the same time and avoids cherry picking later from the                   release branch if there is any critical bug.
       * Feature branches should be short-lived, no more than a day or two (doesn’t impede ability to release).
       * Feature branches should be first code reviewed for it to be merged to trunk (not a release branch)
