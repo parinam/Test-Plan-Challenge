@@ -56,7 +56,8 @@
 1. Manually test the feature branch to make sure all the combinations pass (Upload images with supported file types = jpg, png, bmp,        gif, jpeg)
 2. Manually test image conversion by entering URL of images with supported file types = jpg, png, bmp, gif, jpeg and width range (40-      800)
 3. Manually test image conversion by uploading or entering URL and selecting the supported output format.
-   * Example 1: (Happy path)
+  
+  * Example 1: (Happy path)
         * actual_input = File (test)
          ![alt text](../images/test.png "test")
         * Format = png
@@ -64,19 +65,20 @@
         * expected_output = test.txt and preview 
         ![alt text](../images/test_output.png "test")
         
-    * Example 2: (Happy path)
+   * Example 2: (Happy path)
         * actual_input = URL
         * Format = jpg
         * Width = 100
         * expected_output = test.txt and preview 
  
 *Note - Repeat above test cases for all the font options ( jpg, png, bmp, gif, jpeg etc).
-    * Example 3: (Negative path)
+  
+  * Example 3: (Negative path)
         * actual_input = No file
         * Width = 100
         * expected_output = Error Message
       
-    * Example 4: (Negative path)
+   * Example 4: (Negative path)
         * actual_input = URL
         * Format = jpg
         * Width = None
