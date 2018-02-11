@@ -17,7 +17,7 @@
     * Verify the downloaded file contents
     
 @Test</br>
-Public void TextConversion()</br>
+Public void textConversionPositive()</br>
 {</br>
 //Launching the site and print out of the URL</br>
 driver.get(“http:// ascii-art- generator.org”);</br>
@@ -40,4 +40,28 @@ driver.findElement(By.id(‘previewtext’)).getText().then(textValue={assert.eq
 Assert.equal(dowloadedfile==expectedoutputfile, “check two files are equal”);</br>
 driver.quit();</br>
 }
+    
+6. Test Steps for Fail Criteria:
+    * Launch URL http://www.ascii-art-generator.org/
+    * Select “Text to Ascii Art Banner” radio button
+    * Leave Banner text section empty (See 'Text Conversion Example 6' section under [Testing Strategy](./Testing-Strategy.md))
+    * Choose font from the drop down 
+    * Click on Start
+    * Verify error message "Please enter a text for your banner."
+ 
+@Test</br>
+Public void textConversionNegative()</br>
+{</br>
+//Launching the site</br>
+driver.get(“http:// ascii-art- generator.org”);</br>
+String url = js.executeScript(“return document.URL;”).toString();</br>
+System.out.println(“URL of the site = “+url);</br>
+//Selecting text to ascii banner radio button</br>
+driver.findElement(webdriver.By.css(“radiobutton”).click();</br>
+//send keys to element to enter text</br>
+driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“”);</br>
+//Click on the Start
+driver.findElement(webdriver.By.id(“Starts”)).click():</br>
+//Error messages displayed</br>
+
     
