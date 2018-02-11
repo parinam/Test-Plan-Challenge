@@ -51,3 +51,16 @@
         * Width = 100
         * expected_output = Error Message
 2. If all the test cases pass, add the high quality test cases to automation suite that runs in continuous integration development            practice.
+
+## Image Conversion
+### Monochrome Ascii Art
+1. Manually test the feature branch to make sure all the combinations pass (Upload images with supported file types = jpg, png, bmp,        gif, jpeg)
+2. Manually test image conversion by entering URL of images with supported file types = jpg, png, bmp, gif, jpeg and width range (40-      800)
+3. Manually test image conversion by uploading or entering URL and selecting the supported output format.
+   * Example 1: (Happy path)
+        * actual_input = File (test)
+         ![alt text](../images/test.png "test")
+        * Format = png
+        * Width = 100
+        * expected_output = test.txt and preview 
+        ![alt text](../images/test_output.png "test")
