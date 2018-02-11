@@ -18,18 +18,16 @@
     * Verify the downloaded file contents
     
 @Test</br>
-Public void textConversionPositive()</br>
+Public void imageConversionMonochrome()</br>
 {</br>
 //Launching the site and print out of the URL</br>
 driver.get(“http:// ascii-art- generator.org”);</br>
 String url = js.executeScript(“return document.URL;”).toString();</br>
 System.out.println(“URL of the site = “+url);</br>
 
-//Selecting "Text to Ascii Art Banner" radio button by finding element by css</br>
-driver.findElement(webdriver.By.css(“radiobutton”).click();</br>
-
-//send keys to element to enter text and find element by xpath</br>
-driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“TEST);</br>
+//Selecting "Image to Monochrome Ascii Art" radio button by finding element by css</br>
+element = driver.find_element_by_id("ChooseFile")
+element.send_keys("https://github.com/parinam/ascii-art-generator/blob/master/images/test.png")
 
 //Click on the Start and find element by id</br>
 driver.findElement(webdriver.By.id(“Starts”)).click():</br>
