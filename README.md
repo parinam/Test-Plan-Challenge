@@ -18,4 +18,4 @@
     * [Text Conversion Functional Testing](./TestPlan/Text-Conversion-Functional-Testing.md)
     * Image Conversion
     * [Image Conversion Functional Testing](./TestPlan/Image-Conversion-Functional-Testing.md)
- 5. [Non Functional Testing](./TestPlan/Testing-Strategy.md)
+ 5. [Non Functional Testing](./TestPlan/Non-Functional-Testing.md)
