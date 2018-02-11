@@ -16,27 +16,23 @@
     * Verify banner.txt download functionality
     * Verify the downloaded file contents
     
-@Test
-Public void TextConversion()
-{
-//Launching the site
-driver.get(“http:// ascii-art- generator.org”);
-String url = js.executeScript(“return document.URL;”).toString();
-System.out.println(“URL of the site = “+url);
-//Selecting text to ascii banner radio button
-driver.findElement(webdriver.By.css(“radiobutton”).click();
-//send keys to element to enter text
-driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“T
-est”);
-//Click on the Start
-driver.findElement(webdriver.By.id(“Starts”)).click():
-//assert equal to true
-
-driver.findElement(By.id(‘previewtext’)).getText().then(textValue={ass
-ert.equal(‘banner_text’,previewtext)
-//Download file and verify contents
-Assert.equal(dowloadedfile==expectedoutputfile, “check two files are
-equal”);
-driver.quit();
+@Test</br>
+Public void TextConversion()</br>
+{</br>
+//Launching the site</br>
+driver.get(“http:// ascii-art- generator.org”);</br>
+String url = js.executeScript(“return document.URL;”).toString();</br>
+System.out.println(“URL of the site = “+url);</br>
+//Selecting text to ascii banner radio button</br>
+driver.findElement(webdriver.By.css(“radiobutton”).click();</br>
+//send keys to element to enter text</br>
+driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“TEST);</br>
+//Click on the Start</br>
+driver.findElement(webdriver.By.id(“Starts”)).click():</br>
+//assert equal to true</br>
+driver.findElement(By.id(‘previewtext’)).getText().then(textValue={assert.equal(‘banner_text’,previewtext)</br>
+//Download file and verify contents</br>
+Assert.equal(dowloadedfile==expectedoutputfile, “check two files are equal”);</br>
+driver.quit();</br>
 }
     
