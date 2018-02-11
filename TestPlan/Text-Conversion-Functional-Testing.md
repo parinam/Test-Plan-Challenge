@@ -4,9 +4,9 @@
     * UI Interaction - where users provide input text and match with preview results and banner.txt (downloadable file). The expected           output (preview result and downloadable file) can be stored as testdata in database or as a file in any common shared repo that is         accessible to developers and QA's.
     * Adding of testdata is one time job but any new additions is easy to add.
 4. Test Steps for Pass Criteria:
-    * Launch URL http://www.ascii-art- generator.org/
+    * Launch URL http://www.ascii-art-generator.org/
     * Select “Text to Ascii Art Banner” radio button
-    * Enter the text - TEXT (See Text Conversion under Testing Strategy)
+    * Enter the text - TEXT (See Text Conversion under Testing Strategy [Testing Strategy](./TestPlan/Testing-Strategy.md))
     * Choose font from the drop down 
     * Click on Start
     * Verify actual input matches with the expected output in preview
