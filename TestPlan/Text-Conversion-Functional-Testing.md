@@ -28,7 +28,7 @@ System.out.println(“URL of the site = “+url);</br>
 driver.findElement(webdriver.By.css(“radiobutton”).click();</br>
 
 //send keys to element to enter text and find element by xpath</br>
-driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“TEST);</br>
+driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“TEST");</br>
 
 //Click on the Start and find element by id</br>
 driver.findElement(webdriver.By.id(“Starts”)).click():</br>
