@@ -19,18 +19,23 @@
 @Test</br>
 Public void TextConversion()</br>
 {</br>
-//Launching the site</br>
+//Launching the site and print out of the URL</br>
 driver.get(“http:// ascii-art- generator.org”);</br>
 String url = js.executeScript(“return document.URL;”).toString();</br>
 System.out.println(“URL of the site = “+url);</br>
-//Selecting text to ascii banner radio button</br>
+
+//Selecting "Text to Ascii Art Banner" radio button by finding element by css</br>
 driver.findElement(webdriver.By.css(“radiobutton”).click();</br>
-//send keys to element to enter text</br>
+
+//send keys to element to enter text and find element by xpath</br>
 driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“TEST);</br>
-//Click on the Start</br>
+
+//Click on the Start and find element by id</br>
 driver.findElement(webdriver.By.id(“Starts”)).click():</br>
+
 //assert equal to true</br>
 driver.findElement(By.id(‘previewtext’)).getText().then(textValue={assert.equal(‘banner_text’,previewtext)</br>
+
 //Download file and verify contents</br>
 Assert.equal(dowloadedfile==expectedoutputfile, “check two files are equal”);</br>
 driver.quit();</br>
