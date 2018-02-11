@@ -6,7 +6,7 @@
 4. Test Steps for Pass Criteria:
     * Launch URL http://www.ascii-art-generator.org/
     * Select “Text to Ascii Art Banner” radio button
-    * Enter the text - TEXT (See Text Conversion under Testing Strategy [Testing Strategy](./TestPlan/Testing-Strategy.md))
+    * Enter the text - TEXT (See 'Text Conversion' section under [Testing Strategy](./TestPlan/Testing-Strategy.md))
     * Choose font from the drop down 
     * Click on Start
     * Verify actual input matches with the expected output in preview
