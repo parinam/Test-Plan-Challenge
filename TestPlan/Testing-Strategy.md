@@ -58,29 +58,62 @@
 3. Manually test image conversion by uploading or entering URL and selecting the supported output format.
   
    * Example 1: (Happy path)
-        * actual_input = File (test)
+        * actual_input = File (test) [monochrome]
          ![alt text](../images/test.png "test")
         * Format = png
         * Width = 100
         * expected_output = test.txt and preview 
         ![alt text](../images/test_output.png "test")
         
-    * Example 2: (Happy path)
-        * actual_input = URL
-        * Format = jpg
+        * Example 2: (Happy path)
+        * actual_input = File (test) [color - http,https]
+        * Format = png
         * Width = 100
         * expected_output = test.txt and preview 
- 
+        
 *Note - Repeat above test cases for all the font options ( jpg, png, bmp, gif, jpeg etc).
   
-   * Example 3: (Negative path)
+   * Example 3: (Happy path)
+        * actual_input = File (test) [color]
+        * Format = png
+        * Width = 100
+        * Select output format = HTML with DIV and CSS
+        * expected_output = test.txt and preview 
+    
+    * Example 4: (Happy path)
+        * actual_input = File (test) [color - http,https]
+         ![alt text](../images/test.png "test")
+        * Format = png
+        * Width = 100
+        * Select output format = HTML with DIV and CSS
+        * expected_output = test.txt and preview 
+        
+*Note - Repeat above test cases for all the font options ( jpg, png, bmp, gif, jpeg etc) and output format options(coloured ANSI, UTF8 with CR, UTF8 with CRLF (MS Windows), HTML with DIV and CSS, HTML with tables, IRC with ctrl-k codes, Scalable Vector Graphics, Targa Image)
+        
+   * Example 5: (Negative path)
         * actual_input = No file
         * Width = 100
         * expected_output = Error Message
       
-    * Example 4: (Negative path)
+   * Example 6: (Negative path)
         * actual_input = URL
         * Format = jpg
         * Width = None
         * expected_output = No image
- 
+        
+   * Example 7: (Negative path)
+        * actual_input = Incorrect file path
+        * Width = 100
+        * expected_output = Error Message
+      
+    * Example 8: (Negative path)
+        * actual_input = incorrect URL
+        * Format = jpg
+        * Width = None
+        * expected_output = Error Message
+        
+     * Example 9: (Negative path)
+        * actual_input = large file
+        * Format = jpg
+        * Width = 100
+        * expected_output = Error Message "exceeds the size"
