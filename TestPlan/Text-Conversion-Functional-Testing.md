@@ -3,7 +3,10 @@
 3. Text conversion automation:
     * UI Interaction - where users provide input text and match with preview results and banner.txt (downloadable file). The expected           output (preview result and downloadable file) can be stored as testdata in database or as a file in any common shared repo that is         accessible to developers and QA's.
     * Adding of testdata is one time job but any new additions is easy to add.
-4. Test Steps for Pass Criteria:
+ 4. Nice to have for faster execution: 
+    * The tests can run browser less (e.g HtmlUnitDriver). 
+    * If developers add id’s on UI its much faster than css and xpaths.
+ 5. Test Steps for Pass Criteria:
     * Launch URL http://www.ascii-art-generator.org/
     * Select “Text to Ascii Art Banner” radio button
     * Enter the text - TEXT (See 'Text Conversion' section under [Testing Strategy](./Testing-Strategy.md))
@@ -12,9 +15,28 @@
     * Verify actual input matches with the expected output in preview
     * Verify banner.txt download functionality
     * Verify the downloaded file contents
- 5. Nice to have for faster execution: 
-    * The tests can run browser less (e.g HtmlUnitDriver). 
-    * If developers add id’s on UI its much faster than css and xpaths.
     
-    
+@Test
+Public void TextConversion()
+{
+//Launching the site
+driver.get(“http:// ascii-art- generator.org”);
+String url = js.executeScript(“return document.URL;”).toString();
+System.out.println(“URL of the site = “+url);
+//Selecting text to ascii banner radio button
+driver.findElement(webdriver.By.css(“radiobutton”).click();
+//send keys to element to enter text
+driver.findElement.By.xpath(“//*[@type=\”banner_text\”]”)).sendkeys(“T
+est”);
+//Click on the Start
+driver.findElement(webdriver.By.id(“Starts”)).click():
+//assert equal to true
+
+driver.findElement(By.id(‘previewtext’)).getText().then(textValue={ass
+ert.equal(‘banner_text’,previewtext)
+//Download file and verify contents
+Assert.equal(dowloadedfile==expectedoutputfile, “check two files are
+equal”);
+driver.quit();
+}
     
