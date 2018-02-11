@@ -31,15 +31,14 @@ To achieve continuous delivery, quality should be intact at every level.
 5. If critical bug cannot be fixed at given time, the release is cancelled and later a hotfix release is scheduled.
 * Note - 4th and 5th point is explained in working agreement.
 
-### Acceptance testing –
-1. This is Manual exploratory testing done by business or some stakeholders
-2. Testing is around new features
+### Acceptance testing 
+1. This is Manual exploratory testing done by business or some stakeholders.
+2. Testing is around new features.
+3. No special test cases are required to perform the testing.
 
-- No special test cases are required to perform the testing
-Production testing –
-- The team (developers, QA, Scrum master and PO’s) testing on prod
-environment to make sure functionality is not broken
-- Run smoke automation tests that covers business critical areas
-- It is not possible to catch all the bugs before the release on
-pre-production environment.
-- Monitoring tools can send alerts if the system is down.
+### Production testing 
+Testing takes place during the release on GUI. 
+1. The team (developers, QA, Scrum master and PO’s) testing on prod environment to make sure release functionality is not broken. 
+2. Run smoke automation tests that covers business critical areas.
+3. Monitoring tools can send alerts if the system is down or if any of the GUI page is not responding. 
+4. It is not possible to catch all the bugs before the release on pre-production environment.
